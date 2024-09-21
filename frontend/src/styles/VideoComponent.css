@@ -1,0 +1,218 @@
+.meetVideoContainer {
+    position: relative;
+    height: 100vh;
+    background: rgb(1, 4, 48);
+}
+
+.meetUserVideo {
+    position: absolute;
+    bottom: 10vh;
+    height: 20vh;
+    width: auto;
+    left: 0;
+    border-radius: 20px;
+}
+
+
+.buttonContainers {
+    position: absolute;
+    width: 100vw;
+    bottom: 0;
+    text-align: center;
+}
+
+.buttonContainers svg {
+    font-size: 3rem;
+}
+
+.conferenceView { 
+
+    display: flex;
+    
+    padding: 10px;
+    gap: 10px;
+}
+
+.conferenceView  video {
+    width: 60vw;
+    height: 60vh;
+    min-width: 30vw;
+    border-radius: 10px;
+}
+
+.chatRoom {
+    position: absolute;
+    height: 90vh;
+    right: 0;
+    background: white;
+    border-radius: 10px;
+    width: 30vw;
+    padding-inline: 20px;
+}
+
+.chatContainer {
+    position: relative;
+    height: 100%;
+}
+
+
+.chattingArea {
+    position: absolute;
+    bottom: 0;
+}
+
+.lan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 20px;
+  text-align: center;
+  background-color: #1e1e1e; /* Dark background for contrast */
+  color: white; /* Text color */
+  border-radius: 10px; /* Rounded corners for the container */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+}
+
+/* Heading Styles */
+.lan h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* TextField Styles */
+#outlined-basic {
+  width: 100%;
+  max-width: 400px; /* Limit max width */
+  margin-bottom: 20px;
+  background-color: #fff; /* White background for the input */
+  border-radius: 5px; /* Rounded corners */
+}
+
+/* Button Styles */
+.butt {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  background-color: #d97500; /* Button color */
+  color: white; /* Button text color */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s; /* Smooth transition */
+}
+
+/* Button Hover Effect */
+.butt:hover {
+  background-color: #fda085; /* Lighter color on hover */
+}
+
+/* Video Container Styles */
+.vid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50vh; /* Set height for video */
+  margin-top: 20px; /* Space between button and video */
+  overflow: hidden; /* Prevent overflow */
+  border-radius: 10px; /* Rounded corners */
+  background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+}
+
+/* Video Styles */
+.vid video {
+  width: 100%; /* Full width of the container */
+  height: auto; /* Maintain aspect ratio */
+  max-height: 100%; /* Ensure it does not exceed container height */
+  border-radius: 10px; /* Optional: add rounded corners */
+}
+
+.back-button:hover{
+  cursor: pointer;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+
+  /* .lan h2 {
+    font-size: 1.6rem; 
+    margin-bottom: 15px;
+  }
+
+  #outlined-basic {
+    width: 90%; 
+  }
+
+  .butt {
+    width: 90%; 
+    font-size: 1rem; 
+  }
+
+  .vid video {
+    width: 100%; 
+    height: auto;
+  } */
+
+  .lan h2 {
+    font-size: 1.6rem; /* Smaller font size for mobile */
+    margin-bottom: 15px;
+  }
+
+  #outlined-basic {
+    width: 90%; /* Adjust width for smaller screens */
+  }
+
+  .butt {
+    width: 90%; /* Adjust button width */
+    font-size: 1rem; /* Smaller font size for mobile */
+  }
+    /* .meetUserVideo {
+      bottom: 5vh;
+      height: 15vh;
+      max-width: 40%;
+    } */
+
+    /* .meetUserVideo {
+        position: relative;
+        height: 15vh;
+        max-width: 90%; 
+        margin-top: 10px; 
+      } */
+
+      .meetUserVideo {
+        position: relative; /* Change to relative for mobile */
+        bottom: auto; /* Remove absolute positioning */
+        width: 90vw; /* Full width for mobile */
+        height: 30vw; /* Maintain aspect ratio */
+        margin-bottom: 10px; /* Add space below */
+        max-width: none;
+      }
+    
+
+    .buttonContainers {
+        position: relative; /* Change to relative for mobile */
+        bottom: auto; /* Reset bottom position */
+        margin-top: 10px; /* Space below conference view */
+      }
+    
+      
+  
+    .buttonContainers svg {
+      font-size: 2rem;
+    }
+  
+    .conferenceView video {
+      width: 90vw; /* Full width on smaller screens */
+      height: auto; /* Maintain aspect ratio */
+    }
+  
+    .chatRoom {
+      width: 100vw; /* Full width on mobile */
+      height: 40vh; /* Adjust height */
+      bottom: 0;
+      right: 0;
+    }
+  }
+  
