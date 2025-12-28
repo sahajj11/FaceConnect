@@ -21,7 +21,7 @@ The core features of FaceConnect include:
 * **Screen Sharing**: Share your desktop or specific application windows with other users during a call, ideal for presentations or remote support.
 * **User-Friendly Interface**: Simple and intuitive design ensures ease of use for all users.
 * **Cross-Platform**: Designed to be accessible and functional on both desktop and mobile devices.
-* **[Add Your Specific Feature]**: E.g., User Authentication, Meeting Room Creation, or Muting/Video Toggling.
+
 
 ---
 
